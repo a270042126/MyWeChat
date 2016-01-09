@@ -8,6 +8,10 @@
 #import "XMPPvCardAvatarModule.h"
 #import "XMPPMessageArchivingCoreDataStorage.h"
 #import "XMPPReconnect.h"
+#import "XMPPvCardTempModule.h"
+#import "XMPPvCardTemp.h"
 #import "XMPPvCardCoreDataStorage.h"
 
 #import "MBProgressHUD.h"
+
+#import <SDWebImage/UIImageView+WebCache.h>

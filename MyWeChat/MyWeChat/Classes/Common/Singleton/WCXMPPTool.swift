@@ -30,7 +30,7 @@ class WCXMPPTool: NSObject,XMPPStreamDelegate {
     
     var xmppStream:XMPPStream?
     var registerOperation:Bool = false//注册操作
-    var vCard:XMPPvCardAvatarModule?//电子名片
+    var vCard:XMPPvCardTempModule?//电子名片
     var roster:XMPPRoster?//花名册模块
     var rosterStorage:XMPPRosterCoreDataStorage?//花名册数据存储
     var msgStorage:XMPPMessageArchivingCoreDataStorage?//聊天数据存储
@@ -65,12 +65,12 @@ class WCXMPPTool: NSObject,XMPPStreamDelegate {
         
         //添加电子名片模块
         vCardStorage = XMPPvCardCoreDataStorage.sharedInstance()
-        let vCardTemp = XMPPvCardTempModule(withvCardStorage: vCardStorage)
-        vCard = XMPPvCardAvatarModule(withvCardTempModule: vCardTemp)
+        
+        vCard = XMPPvCardTempModule(withvCardStorage: vCardStorage)
         vCard?.activate(xmppStream)
         
         //添加头像模块
-        avatar = XMPPvCardAvatarModule(withvCardTempModule: vCardTemp)
+        avatar = XMPPvCardAvatarModule(withvCardTempModule: vCard)
         avatar?.activate(xmppStream)
         
         //添加花名册模块
@@ -85,7 +85,7 @@ class WCXMPPTool: NSObject,XMPPStreamDelegate {
         
         xmppStream?.enableBackgroundingOnSocket = true
         //设置代理
-        xmppStream?.addDelegate(self, delegateQueue: dispatch_get_main_queue())
+        xmppStream?.addDelegate(self, delegateQueue: dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0))
         
     }
     
@@ -231,7 +231,7 @@ class WCXMPPTool: NSObject,XMPPStreamDelegate {
             NSLog("在后台")
             //本地通知
             let localNoti = UILocalNotification()
-            localNoti.alertBody = String(format: "%@\n%@", arguments: [message.fromStr(),message.body()])
+            localNoti.alertBody = String(format: "%@\n%@", message.fromStr(),message.body() == nil ? "" : message.body())
             localNoti.fireDate = NSDate() //执行时间
             localNoti.soundName = "default"
             UIApplication.sharedApplication().scheduledLocalNotifications = [localNoti] //执行

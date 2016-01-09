@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E39536C1C40FEC600928D7F /* WCProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E39536B1C40FEC600928D7F /* WCProfileViewController.swift */; };
+		7E39536E1C410B4500928D7F /* WCEditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E39536D1C410B4500928D7F /* WCEditProfileViewController.swift */; };
 		7E3977DC1C3413DE00864129 /* WCContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3977DB1C3413DE00864129 /* WCContactsViewController.swift */; };
 		7E3977DF1C341EB000864129 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3977DE1C341EB000864129 /* NSDate+Extension.swift */; };
+		7E7E76A01C3D374B009F614C /* WCMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7E769F1C3D374B009F614C /* WCMeViewController.swift */; };
+		7E87F8491C3BEB27006F4C3E /* HttpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E87F8481C3BEB27006F4C3E /* HttpTool.swift */; };
+		7E8D5EC51C3A6348004BD555 /* WCAddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8D5EC41C3A6348004BD555 /* WCAddContactViewController.swift */; };
+		7E8D5EC71C3A81DB004BD555 /* WCChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8D5EC61C3A81DB004BD555 /* WCChatViewController.swift */; };
 		7EB957271C33C30D005A22E8 /* WCRegisgerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB957261C33C30D005A22E8 /* WCRegisgerViewController.swift */; };
 		7EB9572C1C33C7ED005A22E8 /* MBProgressTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB9572B1C33C7ED005A22E8 /* MBProgressTool.swift */; };
 		7EB9572E1C33E48A005A22E8 /* WCOtherLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB9572D1C33E48A005A22E8 /* WCOtherLoginViewController.swift */; };
@@ -53,8 +59,14 @@
 		05B1F15BE338E75A291AFA6E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		64282C93BF5920F8B95AB31F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		653E77F35E89FF04D5DE602D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		7E39536B1C40FEC600928D7F /* WCProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCProfileViewController.swift; sourceTree = "<group>"; };
+		7E39536D1C410B4500928D7F /* WCEditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCEditProfileViewController.swift; sourceTree = "<group>"; };
 		7E3977DB1C3413DE00864129 /* WCContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCContactsViewController.swift; sourceTree = "<group>"; };
 		7E3977DE1C341EB000864129 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
+		7E7E769F1C3D374B009F614C /* WCMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCMeViewController.swift; sourceTree = "<group>"; };
+		7E87F8481C3BEB27006F4C3E /* HttpTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpTool.swift; sourceTree = "<group>"; };
+		7E8D5EC41C3A6348004BD555 /* WCAddContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCAddContactViewController.swift; sourceTree = "<group>"; };
+		7E8D5EC61C3A81DB004BD555 /* WCChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCChatViewController.swift; sourceTree = "<group>"; };
 		7EB957261C33C30D005A22E8 /* WCRegisgerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCRegisgerViewController.swift; sourceTree = "<group>"; };
 		7EB9572B1C33C7ED005A22E8 /* MBProgressTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBProgressTool.swift; sourceTree = "<group>"; };
 		7EB9572D1C33E48A005A22E8 /* WCOtherLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCOtherLoginViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				7EB9572B1C33C7ED005A22E8 /* MBProgressTool.swift */,
+				7E87F8481C3BEB27006F4C3E /* HttpTool.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -194,6 +207,11 @@
 			children = (
 				7EB9572F1C33F60D005A22E8 /* WCHistoryViewController.swift */,
 				7E3977DB1C3413DE00864129 /* WCContactsViewController.swift */,
+				7E8D5EC41C3A6348004BD555 /* WCAddContactViewController.swift */,
+				7E8D5EC61C3A81DB004BD555 /* WCChatViewController.swift */,
+				7E7E769F1C3D374B009F614C /* WCMeViewController.swift */,
+				7E39536B1C40FEC600928D7F /* WCProfileViewController.swift */,
+				7E39536D1C410B4500928D7F /* WCEditProfileViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -510,17 +528,23 @@
 				7EFD837A1C33A68F00E032C5 /* WCBaseLoginController.swift in Sources */,
 				7EB957301C33F60D005A22E8 /* WCHistoryViewController.swift in Sources */,
 				7EB9572C1C33C7ED005A22E8 /* MBProgressTool.swift in Sources */,
+				7E8D5EC71C3A81DB004BD555 /* WCChatViewController.swift in Sources */,
 				7EB957271C33C30D005A22E8 /* WCRegisgerViewController.swift in Sources */,
+				7E8D5EC51C3A6348004BD555 /* WCAddContactViewController.swift in Sources */,
 				7EC588BE1C32CF9C007E6D12 /* UIStoryBoard+Extenstion.swift in Sources */,
 				7EC588AD1C327896007E6D12 /* WCNavigationController.swift in Sources */,
 				7EC588B21C327A97007E6D12 /* UIImage+Extension.swift in Sources */,
+				7E7E76A01C3D374B009F614C /* WCMeViewController.swift in Sources */,
 				7E3977DF1C341EB000864129 /* NSDate+Extension.swift in Sources */,
+				7E39536C1C40FEC600928D7F /* WCProfileViewController.swift in Sources */,
 				7EFD83781C3376D300E032C5 /* UITextField+Extension.swift in Sources */,
+				7E87F8491C3BEB27006F4C3E /* HttpTool.swift in Sources */,
 				7EC588B01C3279EB007E6D12 /* UIButton+Extenstion.swift in Sources */,
 				7EB9572E1C33E48A005A22E8 /* WCOtherLoginViewController.swift in Sources */,
 				7EFD83761C33727B00E032C5 /* WCLoginViewController.swift in Sources */,
 				7E3977DC1C3413DE00864129 /* WCContactsViewController.swift in Sources */,
 				7EC588B51C328302007E6D12 /* WCUserInfo.swift in Sources */,
+				7E39536E1C410B4500928D7F /* WCEditProfileViewController.swift in Sources */,
 				7ECBFC101C32637900BD9390 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

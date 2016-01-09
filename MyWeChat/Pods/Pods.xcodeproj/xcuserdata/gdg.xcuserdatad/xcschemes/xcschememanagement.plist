@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>XMPPFramework.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,7 +42,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3ADBED7ABD887280205CDA4E60E6291B</key>
+		<key>84B48B1557282919A6EB86F9BD07596D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>93E04C8CDDDE6D546CDFBDE236BD269F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,7 +57,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F932AABEDD58A02399043835A54DB60A</key>
+		<key>EDE8C9FFC522EB4ABE516E4163F91C1C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
